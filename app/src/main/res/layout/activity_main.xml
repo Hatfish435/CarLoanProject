@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/TextPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price" />
+
+        <EditText
+            android:id="@+id/EditPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Price"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/TextDownPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Down Payment" />
+
+        <EditText
+            android:id="@+id/EditDownPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Down Payment"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/TextLaon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loan/Lease" />
+
+        <EditText
+            android:id="@+id/EditLoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Loan/Lease"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/TextMonths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount of Months of Lease" />
+
+        <EditText
+            android:id="@+id/EditMonths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter amount of Moonths of the Loan/Lease"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/TextToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Off for Loans and On for Leases" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/OffButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Off" />
+
+            <Button
+                android:id="@+id/OnButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="On" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ButtonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate " />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
